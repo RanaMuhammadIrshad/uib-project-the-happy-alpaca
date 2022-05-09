@@ -1,0 +1,580 @@
+:root {
+  font-size: 62.5%;
+  --primary-orange: rgba(229, 140, 140, 0.8);
+  --accent-blue: rgba(0, 111, 190, 0.5);
+  --black-black: #070707;
+  --light-light: #eff8ff;
+  --white-white: #ffffff;
+  --orange-orange0: rgba(253, 249, 246, 0.8);
+  --orange-orange1: #f9ebe3;
+  --orange-orange2: #f4dcce;
+  --orange-orange3: #efccb8;
+  --orange-orange4: #e9ba9e;
+  --orange-orange5: #dea787;
+  --orange-orange6: #c69579;
+  --orange-orange7: #aa8068;
+  --orange-orange8: #866552;
+  --orange-orange9: #4e3b30;
+  --blue-blue0: #f6fafd;
+  --blue-blue1: #e2eff9;
+  --blue-blue2: #cce4f5;
+  --blue-blue3: #b5d8f0;
+  --blue-blue4: #9bcaeb;
+  --blue-blue5: #7dbae5;
+  --blue-blue6: #5aa7de;
+  --blue-blue7: #2d8fd5;
+  --blue-blue8: #006fbe;
+  --blue-blue9: #004170;
+  --gray-gray0: #f9f9fa;
+  --gray-gray1: #eceeef;
+  --gray-gray2: #dee1e3;
+  --gray-gray3: #cfd3d7;
+  --gray-gray4: #bfc5c9;
+  --gray-gray5: #adb4b9;
+  --gray-gray6: #98a1a8;
+  --gray-gray7: #7f8b93;
+  --gray-gray8: #606e79;
+  --gray-gray9: rgba(55, 64, 71, 0.8);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.6rem;
+}
+
+/* HEADER */
+.header {
+  background-color: var(--orange-orange0);
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.title-paragraph {
+  font-weight: bolder;
+}
+.logo img {
+  width: 6rem;
+}
+.logo {
+  display: flex;
+  align-items: center;
+
+  gap: 1rem;
+  text-transform: uppercase;
+  position: relative;
+  animation: example 5s 3s infinite;
+}
+@keyframes example {
+  from {
+    left: -500px;
+  }
+  to {
+    left: 10px;
+  }
+}
+
+.header nav ul {
+  display: flex;
+  gap: 1rem;
+  margin-right: 1rem;
+  flex-wrap: wrap;
+}
+
+.header nav {
+  display: flex;
+  align-items: center;
+}
+
+.header nav ul li {
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+.header nav ul li a {
+  text-decoration: none;
+  cursor: pointer;
+  color: green;
+}
+
+a:link {
+  color: var(--orange-orange9);
+}
+a:visited {
+  color: black;
+}
+a:hover {
+  color: red;
+}
+a:active {
+  background-color: orange;
+  color: green;
+}
+
+/* MAIN IMAGE AND ABOUT */
+.main-image img {
+  width: 100%;
+  height: auto;
+}
+.heading-2,
+.heading-3,
+.heading-4,
+p {
+  text-align: center;
+}
+
+.about p {
+  margin: 1rem;
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* THE FARM */
+.the-farm {
+  background: var(--gray-gray2);
+}
+.the-farm img {
+  width: 100%;
+  height: auto;
+}
+.the-farm {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+/* The alpacas */
+.the-alpacas-images {
+  background: var(--orange-orange1);
+}
+.the-alpacas,
+.heading-3 {
+  margin: 3rem;
+}
+
+.item {
+  width: 180px;
+  height: 180px;
+  border-radius: 90px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 5rem;
+}
+.balou p,
+.gismo p,
+.hardi p,
+.kalle p,
+.king p,
+.scotty p {
+  padding-top: 20rem;
+}
+
+.balou {
+  background: url("/images/alpacas/balou.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.gismo {
+  background: url("/images/alpacas/gismo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.hardi {
+  background: url("/images/alpacas/hardi.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.kalle {
+  background: url("/images/alpacas/kalle.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.king {
+  background: url("/images/alpacas/king.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.scotty {
+  background: url("/images/alpacas/scotty.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/* Guide tour */
+.guide-tours {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.one-day-tour,
+.two-day-tour,
+.three-day-tour {
+  background-color: var(--blue-blue3);
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  margin: 1rem auto;
+  border-radius: 2rem;
+  position: relative;
+}
+.one-day-tour h4,
+.two-day-tour h4,
+.three-day-tour h4 {
+  padding: 5rem;
+}
+
+.one-day-tour ul,
+.two-day-tour ul,
+.three-day-tour ul {
+  padding: 5rem;
+}
+
+.one-day-tour p,
+ul,
+.two-day-tour p,
+ul,
+.three-day-tour p,
+ul {
+  text-align: left;
+  margin-left: 5rem;
+}
+.most-booked p {
+  position: absolute;
+  top: 5rem;
+  left: -5rem;
+  background-color: var(--blue-blue5);
+  text-transform: uppercase;
+}
+
+.one-day-tour button,
+.two-day-tour button,
+.three-day-tour button {
+  padding: 2rem;
+  width: 70%;
+  border-radius: 2rem;
+  border: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2rem;
+  position: absolute;
+  left: 15%;
+  bottom: 5%;
+}
+/* accommodation */
+.accommodation img {
+  width: 100%;
+  height: 50vh;
+}
+
+.accommodation {
+  width: 70%;
+  margin: 0 auto;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.accommodation h4,
+.the-farm-shop h4 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.accommodation p,
+.the-farm-shop p {
+  margin-bottom: 5rem;
+  text-align: justify;
+}
+/* accommodation booking  */
+.accommodation-booking {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.accommodation-booking p {
+  text-align: justify;
+  background: var(--orange-orange4);
+  padding: 1rem;
+}
+.accommodation-booking button {
+  margin-top: 10rem;
+  padding: 2rem;
+  width: 40%;
+
+  border-radius: 2rem;
+  border: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2rem;
+  background: var(--blue-blue6);
+}
+
+/* The farm shop */
+
+.the-farm-shop img {
+  width: 100%;
+  height: auto;
+}
+
+.the-farm-shop {
+  width: 70%;
+  margin: 0 auto;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Margin at all sections */
+.shop,
+.farm,
+.alpacas,
+.tour,
+.accommodations {
+  margin-top: 10rem;
+}
+
+/* Contact us */
+.contact {
+  margin-bottom: 15rem;
+  margin-top: 15rem;
+}
+
+.contact h2 {
+  margin-bottom: 3rem;
+}
+
+.newForm {
+  width: 70%;
+  background-color: var(--gray-gray4);
+  margin: 0 auto;
+  padding: 0.5rem;
+}
+
+.newForm label {
+  width: auto;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.newForm input {
+  width: 100%;
+  border: 0;
+  padding: 5px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.name,
+.email {
+  display: flex;
+  flex-direction: column;
+}
+textarea {
+  width: 100%;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.newForm button {
+  width: 30%;
+  border: 0;
+  padding: 0.5rem 1rem;
+  color: black;
+  text-transform: uppercase;
+  margin: 1rem;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+footer {
+  background-color: var(--gray-gray5);
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .header {
+    background-color: var(--orange-orange0);
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 5rem;
+  }
+
+  .header nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    margin-right: 5rem;
+  }
+  .the-farm {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: auto;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .the-farm img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .store {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .donkey {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .cow {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .hen {
+    grid-column: 2 /3;
+    grid-row: 2 / 3;
+  }
+
+  .the-alpacas-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .guide-tours {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: auto;
+    gap: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .one-day-tour,
+  .two-day-tour,
+  .three-day-tour {
+    height: 100vh;
+  }
+
+  .three-day-tour {
+    grid-column-start: span 2;
+    width: 50%;
+  }
+
+  .accommodation {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: auto;
+    gap: 1rem;
+  }
+
+  .the-cabine {
+    grid-column-start: span 2;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .the-farm-shop {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: auto;
+    gap: 1rem;
+  }
+  .fruits {
+    grid-column-start: span 2;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .accommodation img,
+  .the-farm-shop img {
+    height: 50vh;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .header {
+    background-color: var(--orange-orange0);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-left: 5rem;
+  }
+
+  .header nav ul {
+    display: flex;
+    gap: 3rem;
+    margin-right: 5rem;
+  }
+
+  .the-alpacas-images {
+    display: flex;
+  }
+
+  .guide-tours {
+    display: flex;
+    width: auto;
+  }
+
+  .three-day-tour {
+    width: 100%;
+  }
+
+  .accommodation > * {
+    flex-basis: 100%;
+  }
+
+  .accommodation {
+    display: flex;
+  }
+
+  .the-farm-shop > * {
+    flex-basis: 100%;
+  }
+  .the-farm-shop {
+    display: flex;
+    gap: 1rem;
+  }
+}
